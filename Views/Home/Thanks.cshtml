@@ -1,0 +1,23 @@
+﻿@model ProgrammerBlog.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body class="text-center">
+    <p>
+        <h1>Спасибо, @Model.Name!</h1>
+        <h1>Надеемся, что вам понравится!</h1>
+    </p>
+    <a class="nav-link" asp-action="ListResponses">Нажмите сюда</a>
+    чтобы увидеть остальных подписчиков.
+</body>
+</html>
